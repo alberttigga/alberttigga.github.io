@@ -1,0 +1,83 @@
+<html>
+<style>
+ht { font-family: times, Times New Roman, times-roman, georgia, serif;
+		font-size: 48px;
+	        line-height: 40px;
+	        letter-spacing: -1px;
+		color: #444;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+                font-weight: 100;
+ }
+
+h1 { 	color: #444; 
+	font-family: times, Times New Roman, times-roman, georgia, serif; 
+	font-size: 15px; 
+	line-height: 20px; 
+	font-weight: normal; 
+	margin-bottom: 0px; 
+	margin-top: 40px; 
+	text-align: left; 
+	text-shadow: 0 1px 1px #fff; 
+  }
+
+h1.date { 
+	background: #fe921f; 
+	color: #ffffff; 
+	display: inline-block; 
+	font-family: 'Lato', sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	line-height: 2px; 
+	letter-spacing: 1px; 
+	margin: 0 0 30px; 
+	padding: 10px 15px 8px;  
+	text-transform: uppercase; }
+
+h2 { 	color: #444; 
+	font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 15px; 
+	font-weight: normal; 
+	letter-spacing: -1px; 
+	line-height: 20px; 
+	text-align: left; 
+}
+
+
+</style>
+
+<script language="JavaScript">
+function mdy(todaysdate) {
+//calls the function mdy why to get our date
+return todaysdate.getMonth()+1+"/"+todaysdate.getDate()+"/"+todaysdate.getYear()
+}
+</script>
+
+
+
+<body style="background-color:#FFF380">
+<p> <img src="..\images\Albert.jpg" alt="Smiley face" style="float:right;width:128px;height:128px;">
+<ht>The Internet of Things (IoT) Overview</ht> 
+</p>
+<br>
+<h1 class="date"> 
+<script language="JavaScript">
+sampleDate1=new Date()
+document.write ("Date: "+ mdy(sampleDate1))
+</script> 
+<h1>
+
+<hr>
+
+<p><h2>
+<img src="..\images\iotbd.png" alt="Smiley face" style="float:right;width:382px;height:260px;">
+The Internet of Things (IoT) is the network of physical objects or "things" embedded with electronics, software, sensors, and network connectivity, which enables these objects to collect and exchange data.The Internet of Things allows objects to be sensed and controlled remotely across existing network infrastructure,creating opportunities for more direct integration between the physical world and computer-based systems, and resulting in improved efficiency, accuracy and economic benefit.Each thing is uniquely identifiable through its embedded computing system but is able to interoperate within the existing Internet infrastructure. Experts estimate that the IoT will consist of almost 50 billion objects by 2020.
+
+British entrepreneur Kevin Ashton first coined the term in 1999 while working at the Auto-ID Labs (originally called Auto-ID centers - referring to a global network of RFID connected objects). Typically, IoT is expected to offer advanced connectivity of devices, systems, and services that goes beyond machine-to-machine communications (M2M) and covers a variety of protocols, domains, and applications. The interconnection of these embedded devices (including smart objects), is expected to usher in automation in nearly all fields, while also enabling advanced applications like a Smart Grid,and expanding to the areas such as smart cities.
+
+"Things," in the IoT sense, can refer to a wide variety of devices such as heart monitoring implants, biochip transponders on farm animals, electric clams in coastal waters, automobiles with built-in sensors, or field operation devices that assist firefighters in search and rescue operations.These devices collect useful data with the help of various existing technologies and then autonomously flow the data between other devices.Current market examples include smart thermostat systems and washer/dryers that use Wi-Fi for remote monitoring.</h2></p>
+
+<br>
+
+</body>
+</html>
