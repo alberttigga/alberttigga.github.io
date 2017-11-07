@@ -62,8 +62,19 @@ return todaysdate.getMonth()+1+"/"+todaysdate.getDate()+"/"+todaysdate.getYear()
 <br>
 <h1 class="date"> 
 <script language="JavaScript">
-sampleDate1=new Date()
-document.write ("Date: "+ mdy(sampleDate1))
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+
+var yyyy = today.getFullYear();
+if(dd<10){
+    dd='0'+dd;
+} 
+if(mm<10){
+    mm='0'+mm;
+} 
+var today = 'Date :'+dd+'/'+mm+'/'+yyyy;
+document.write(('Date : ').value = today);
 </script> 
 <h1>
 
