@@ -117,7 +117,6 @@ The very basic example of the IOT, where we are controlling the LED light from W
 
 <div class="onoffswitch">
 
-<button class="button" >Light on!</button>
 <button class="button" id="On" type="button" style="height:30px;width:90px;font-size:12px"> ON </button>
 <button class="button" id="Off" type="button" style="height:30px;width:90px;;font-size:12px"> OFF </button>
 
@@ -151,11 +150,6 @@ The very basic example of the IOT, where we are controlling the LED light from W
 	});
 
 	// Sending data
-	function disco() {
-        p.publish({
-            channel : channel, 
-            message : {led: 1}
-        }); }
 	function lightoff() {
         p.publish({
             channel : channel, 
@@ -169,7 +163,6 @@ The very basic example of the IOT, where we are controlling the LED light from W
     }
 
     // Click event
-	button.addEventListener('click', disco);
 	b1.addEventListener('click', lighton);
 	b2.addEventListener('click', lightoff);
 
