@@ -127,9 +127,8 @@ The very basic example of the IOT, where we are controlling the LED light from W
 <a href="content.html" target="content" style="float:right">Back to original page</a>
 </footer>
 	<!-- including the latest PubNub JavaScript SDK -->
-	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.17.0.min.js"></script>
-    	<script type="text/javascript" src="http://pubnub.github.io/eon/lib/eon.js"></script>
-
+	<script src="https://cdn.pubnub.com/pubnub-3.7.7.min.js"></script>
+    	
 	<script>
 (function() {
 
@@ -142,7 +141,8 @@ The very basic example of the IOT, where we are controlling the LED light from W
 	// Init
 	var p = PUBNUB.init({
 		subscribe_key: 'sub-c-84551a9e-57ed-11e5-b316-0619f8945a4f',
-		publish_key:   'pub-c-f0d6636d-8730-46d3-a0ae-b520ac275841'
+		publish_key:   'pub-c-f0d6636d-8730-46d3-a0ae-b520ac275841',
+		ssl: true
 
 	});
 
