@@ -118,6 +118,8 @@ The very basic example of the IOT, where we are controlling the LED light from W
 <div class="onoffswitch">
 
 <button class="button" >Light on!</button>
+<button class="button" id="On" type="button" style="height:30px;width:90px;font-size:12px"> ON </button>
+<button class="button" id="Off" type="button" style="height:30px;width:90px;;font-size:12px"> OFF </button>
 
 </div>
 </section>
@@ -133,7 +135,9 @@ The very basic example of the IOT, where we are controlling the LED light from W
 (function() {
 
 	// DOM
-	var button = document.querySelector('button'); 
+	var button = document.querySelector('button');
+	var b1 = document.getElementById('On');
+	var b2 = document.getElementById('Off'); 
 
 	// This is the channel name you are subscribing in remote-led.py
 	var channel = 'disco';
@@ -151,11 +155,23 @@ The very basic example of the IOT, where we are controlling the LED light from W
         p.publish({
             channel : channel, 
             message : {led: 1}
+        }); }
+	function lightoff() {
+        p.publish({
+            channel : channel, 
+            message : {led: 2}
+        });}
+	function lighton() {
+        p.publish({
+            channel : channel, 
+            message : {led: 1}
         });
     }
 
     // Click event
 	button.addEventListener('click', disco);
+	b1.addEventListener('click', lighton);
+	b2.addEventListener('click', lightoff);
 
 })();
 	</script>
